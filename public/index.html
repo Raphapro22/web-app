@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>app</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="row1">
+        <div class="text-center">
+            <img src="img\logo.png" alt="signin" class="img1">
+            <p class="font-20 semi-font main-text-color mt-4 mb-4 mb-lg-5">Sign In Hexashop</p>
+            <form id="signInForm">
+                <div class="form-group"> 
+                    <div class="input-icon">
+                        <span class="hexashop-name"></span>
+                        <input type="text" id="nameInput" class="register-input"  placeholder="Name" pattern="^[A-Za-z\s]+$" maxlength="30"> 
+                    </div>
+                </div>
+                <div class="form-group"> 
+                    <div class="input-icon">
+                        <span class="hexashop-email"></span>
+                        <input type="email" id="emailInput" class="register-input"  placeholder="Email" maxlength="35"> 
+                    </div>
+                </div>
+                <div class="form-group"> 
+                    <div class="input-icon">
+                        <span class="hexashop-password"></span>
+                        <input type="number" id="phoneInput" class="register-input" placeholder="Phone number" data-maxlength="9" oninput="this.value=this.value.slice(0,this.dataset.maxlength)">
+                    </div>
+                </div> 
+                <button type="submit" class="btn btn-block rounded-0 main-hover-background-color second-background-color font-16 semi-font py-3">Sign in</button>
+            </form>
+
+            <div id="successMessage" style="display: none;">
+                <p class="font-20 semi-font main-text-color mt-4">You have successfully been registered</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
